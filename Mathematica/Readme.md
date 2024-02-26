@@ -7,7 +7,7 @@ Furthermore, it accepts the following options:
 
 (3) "PREF": include the appropriate factors of
     $g_s^{K}\left(\prod_{j}t^{c_j}\Delta_{\mu_j}\right)(\Delta\cdot\Gamma)$
-    taking into account all possible permutations of the gluonic quantities. The default option is\newline PREF $\rightarrow$ True. When set to False, the prefactor is omitted and only one color-ordering, corresponding to $t^{c_1}\dots t^{c_K}$, is generated.
+    taking into account all possible permutations of the gluonic quantities. The default option is "PREF" $\rightarrow$ True. When set to False, the prefactor is omitted and only one color-ordering, corresponding to $t^{c_1}\dots t^{c_K}$, is generated.
 Within the package, the momenta are denoted by $DP[1]$ and $DP[2]$ for the quark momenta $\Delta\cdot P_1$ and $\Delta\cdot P_1$ and $Dp[i]$ for the gluonic ones $\Delta\cdot p_i$.
 
 More details on the conventions can be found in Sec.2 of the main text.
