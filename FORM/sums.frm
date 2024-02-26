@@ -7,6 +7,14 @@ S gs;
 
 Off Statistics;
 
+#if 1==0
+
+Evaluate sums and reinstate overall factor.
+
+File by S. Van Thurenhout
+
+#endif
+
 #include tmpNKLO.h
 
 id pow(x1?,x2?) = x1^x2;
@@ -21,5 +29,5 @@ id fcol(<Dp1?>,...,<Dp`K'?>) = gs^`K'*<Delta(mu(Dp1))>*...*<Delta(mu(Dp`K'))>*De
 
 B t,gs,delD,DeltaGamma,Delta;
 
-P +f +s;
+P +f;
 .end

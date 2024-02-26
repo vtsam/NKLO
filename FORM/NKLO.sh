@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# File by S. Van Thurenhout
+
 echo SPIN:
 read N
 echo NR OF TOTAL DERIVATIVES:

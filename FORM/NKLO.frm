@@ -13,6 +13,8 @@ There are 3 input parameters:
 - k: Number of total derivatives
 - K: Number of gluons
 
+File by S. Van Thurenhout
+
 #endif
 
 Off Statistics;
