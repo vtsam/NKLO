@@ -7,7 +7,7 @@ FORM implementation of the NKLO Feynman rule. There are 3 main files:
   the output file outputN...k...K... .h. For example, for N=3, k=1 and K=1 the output file is called outputN3k1K1.h and reads
 
   RuleNKLO =
-       - Dp(1)*delD - DP(1)*del1*delD - DP(2)*del2*delD;
+       - Dp(1) * delD - DP(1) * del1 * delD - DP(2) * del2 * delD;
 
 The notation is as follows:
 
