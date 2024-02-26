@@ -17,7 +17,7 @@ FORM implementation of the NKLO Feynman rule. There are 3 main files:
   if the permutations are turned off and
 
   RuleNKLO =
-       + t(1) * t(2) * Delta(mu(1)) * Delta(mu(2)) * DeltaGamma * gs^2 * delD^2 * (
+        t(1) * t(2) * Delta(mu(1)) * Delta(mu(2)) * DeltaGamma * gs^2 * delD^2 * (
           + Dp1
           + Dp2
           + DP2 * del2
