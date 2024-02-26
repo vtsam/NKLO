@@ -1,9 +1,6 @@
 Mathematica implementation of the NKLO Feynman rule. The rule is implemented in NKLO.wl. The NKLO.wl file contains a single function, called NKLO, which takes the arguments N, k and K (in that order). Furthermore, it accepts the following options:
-
     * "kinematics": choose the momentum routing, which corresponds to setting $\delta_1$ and $\delta_2$ above to specific values. The default option is "generic", which keeps $\delta_1$ and $\delta_2$ symbolic. The other options are "incoming", which sets $\delta_1=\delta_2=+1$ and "physical" for which $\delta_1=-1, \delta_2=+1$.
-
     * "covD": specifies the convention used for the covariant derivative, which corresponds to setting a value for $\delta_D$ above. The default option is "generic", which keeps $\delta_D$ symbolic. Alternatively one can set covD $\rightarrow 1$ or covD $\rightarrow -1$.
-    
     * "PREF": include the appropriate factors of
     $g_s^{K}\left(\prod_{j=1}^{K}t^{c_j}\Delta_{\mu_j}\right)(\Delta\cdot\Gamma)$
     taking into account all possible permutations of the gluonic quantities. The default option is\newline PREF $\rightarrow$ True. When set to False, the prefactor is omitted and only one color-ordering, corresponding to $t^{c_1}\dots t^{c_K}$, is generated.
