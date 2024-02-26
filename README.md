@@ -1,3 +1,3 @@
 # NKLO
 
-Feynman rule for leading-twist quark operators, including total derivatives and an arbitrary number of gluons. The accompanying paper can be found at [INSERT arXiv!].
+Feynman rule for leading-twist quark operators, including total derivatives and an arbitrary number of gluons. If any of the implementations provided here turn out to be useful in your research, please consider citing the accompanying paper [INSERT arXiv!].
