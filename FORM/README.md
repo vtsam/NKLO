@@ -36,7 +36,7 @@ otherwise. The notation is as follows:
 * del1 and del2 set the conventions used for the momenta of the quark momenta, denoted by DP1 and DP2 resp. In particular, for all momenta flowing into the operator vertex, one should set del1=del2=+1. For physical momentum flow, set
   del1=-1, del2=+1.
 * Associated to gluon i we have the momentum dpi and a color generator t(i).
-* Delta(mu(i)) is the lightlike vector with Lorentz index mu(i).
-* DeltaGamma represents the dot product of Delta with some Dirac gamma matrix.
+* Delta(mu(i)) corresponds to $\Delta_{\mu_i}$ (with $\Delta^2=0$).
+* DeltaGamma represents ($\Delta\cdot\Gamma$).
 
 More details on the notation and conventions can be found in Sec.2 of the main text.
