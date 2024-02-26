@@ -3,7 +3,7 @@ FORM implementation of the NKLO Feynman rule. There are 3 main files:
 * NKLO.frm: Sets up the Feynman rule, leaving the sums unevaluated.
 * sums.frm: Evaluates the sums
 * NKLO.sh: Shell script to generate the Feynman rule. When run, the user will be prompted to input the operator spin, the number of total derivatives and the number of gluons. Furthermore, the user is asked whether or not to include permutations. When the latter is given a value 0, only the kinematic part of the Feynman rule corresponding
-  to the color-ordering $t^{c_1}...t_{c_K}$ is generated. The FORM output does NOT include the other permutations of the gluon fields, and also the overall factor $g_s (t^{c_1}...t^{c_K})(\Delta_{\mu_1}\dots\Delta_{\mu_K})(\Delta\cdot\Gamma)$ is omitted. If the value for the permutations is different from 0, all permutations of the gluonic fields are generated, together with the proper prefactor. The rule is written to
+  to the color-ordering $t^{c_1}...t^{c_K}$ is generated. The FORM output does NOT include the other permutations of the gluon fields, and also the overall factor $g_s (t^{c_1}...t^{c_K})(\Delta_{\mu_1}\dots\Delta_{\mu_K})(\Delta\cdot\Gamma)$ is omitted. If the value for the permutations is different from 0, all permutations of the gluonic fields are generated, together with the proper prefactor. The rule is written to
   the output file outputN...k...K... .h. For example, for N=4, k=1 and K=2 the output file is called outputN4k1K2.h and reads
 
   RuleNKLO =
