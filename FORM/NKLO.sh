@@ -2,6 +2,9 @@
 
 # File by S. Van Thurenhout
 
+rm -f NKLO.log
+rm -f tmpNKLO.h
+
 echo SPIN:
 read N
 echo NR OF TOTAL DERIVATIVES:
@@ -19,12 +22,13 @@ else
 
 form -l -q -d N="$N" -d k="$k" -d K="$K" -d PERM="$perms" NKLO
 
-sed -i 's/sum/sum_/g' NKLO.log 
-sed -i 's/RuleNKLO/L RuleNKLO/g' NKLO.log
+sed 's/sum/sum_/g' NKLO.log | sed 's/RuleNKLO/L RuleNKLO/g' > tmpNKLO.h
 
-mv NKLO.log tmpNKLO.h
+rm -f NKLO.log
 
 form -l -q -d N="$N" -d k="$k" -d K="$K" sums 
+
+rm -f tmpNKLO.h
 
 mv sums.log outputN"$N"k"$k"K"$K".h
 
