@@ -14,9 +14,9 @@ read K
 echo INCLUDE PERMUTATIONS:
 read perms
 
-if [ $k -gt $[N-1] ]
+if [ $[k+K] -gt $[N-1] ]
 then
-	echo ERROR: Number of derivatives must be smaller than N-1
+	echo ERROR: Sum of number of derivatives and number of gluons must be smaller than N-1
 
 else
 
@@ -31,5 +31,7 @@ form -l -q -d N="$N" -d k="$k" -d K="$K" sums
 rm -f tmpNKLO.h
 
 mv sums.log outputN"$N"k"$k"K"$K".h
+
+cat sums.log
 
 fi
