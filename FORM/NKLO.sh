@@ -32,6 +32,4 @@ rm -f tmpNKLO.h
 
 mv sums.log outputN"$N"k"$k"K"$K".h
 
-cat sums.log
-
 fi
