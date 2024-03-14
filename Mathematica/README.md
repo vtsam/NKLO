@@ -1,5 +1,5 @@
 Mathematica implementation of the NKLO Feynman rule. The rule is implemented in NKLO.wl. The NKLO.wl file contains a single function, called NKLO, which takes the arguments N, k and K (in that order). 
-Furthermore, it accepts the following options:
+While N and k can be either numeric or symbolic, K has to be numeric (i.e. an integer larger than or equal to zero). Furthermore, the following options are accepted:
 
 (1) "kinematics": choose the momentum routing, which corresponds to setting $\delta_1$ and $\delta_2$ to specific values. The default option is "generic", which keeps $\delta_1$ and $\delta_2$ symbolic. The other options are "incoming", which sets $\delta_1=\delta_2=+1$ and "physical" for which $\delta_1=-1, \delta_2=+1$.
 
