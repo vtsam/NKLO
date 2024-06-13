@@ -1,6 +1,6 @@
-Auto S i,j,x,m,l,del;
-CF del,binom,pow,Delta,mu,DeltaGamma;
-Auto CF DP,Dp;
+Auto S i,j,x,m,l,del,a,b,c;
+CF del,binom,pow,Delta,mu,DeltaGamma,dd,g,eps;
+Auto CF DP,Dp,P,p;
 Auto F f;
 F sum,t;
 S gs;
@@ -9,7 +9,7 @@ Off Statistics;
 
 #if 1==0
 
-Evaluate sums and reinstate overall factor.
+Evaluate sums
 
 File by S. Van Thurenhout
 
@@ -20,14 +20,17 @@ File by S. Van Thurenhout
 id pow(x1?,x2?) = x1^x2;
 id binom(x1?,x2?) = binom_(x1,x2);
 
-id fcol(<Dp1?>,...,<Dp`K'?>) = gs^`K'*<Delta(mu(Dp1))>*...*<Delta(mu(Dp`K'))>*DeltaGamma*<t(Dp1)>*...*<t(Dp`K')>;
-
 #do i=1,`K'
-	id Delta(mu(Dp`i')) = Delta(mu(`i'));
-	id t(Dp`i') = t(`i');
+	id Delta(mu(p`i')) = Delta(mu(`i'));
+	id t(p`i') = t(c`i');
 #enddo
 
-B t,gs,delD,DeltaGamma,Delta;
+Argument fcol;
+	id x0 = a;
+	id x`K' = b;
+EndArgument;
+
+B t,gs,delD,DeltaGamma,Delta,i_,del1,del2,fcol,g,eps;
 
 P +f;
 .end
